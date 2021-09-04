@@ -1,0 +1,67 @@
+@import url(config.css);
+
+footer{
+    background-color: var(--main-color);
+}
+
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .logo{
+    width: 20%;
+}
+
+footer .logo .brand{
+    width: 100%;
+    margin-left: 1rem;
+}
+
+footer .logo img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+footer ul span{
+    display: block;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+footer ul li{
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+footer ul li a{
+    transition: ease 0.5s;
+}
+
+footer ul li:hover > a{
+    display: block;
+    transform: translateX(-20px);
+}
+
+@media screen and (max-width: 480px)
+and (min-width: 320px) {
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }  
+
+    footer ul:not(:last-child){
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 768px)
+and (min-width: 481px){
+    footer .container{
+        flex-wrap: wrap;
+    }
+}

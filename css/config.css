@@ -1,0 +1,302 @@
+:root{
+    --main-color: #1A5889;
+    --primary-color: #fff;
+    --bg-color: #eaeaea8a;
+    --box-shadow: 0 6px 15px 3px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    color: var(--primary-color) !important;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0 !important;
+    margin: 0;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    width: 85%;
+}
+
+.bg-color{
+    background-color: var(--bg-color);
+}
+
+.header{
+    width: fit-content;
+    padding: 20px;
+    text-align: right;
+}
+
+.title-line{
+    width: fit-content;
+    font-size: 1.75rem;
+    position: relative;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 5px solid var(--main-color);
+    border-radius: 3px;
+}
+
+.carousel{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.685);
+}
+
+.more{
+    background-color: #0F6CE1;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.my-7{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.carousel .carousel-caption{
+    position: initial;
+}
+
+.carousel-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.carousel .carousel-caption .title{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.carousel .carousel-caption .desc{
+    font-size: 19px;
+}
+
+.carousel-indicators{
+    bottom: 20% !important;
+}
+
+.carousel-indicators button{
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+    border: 2px solid white !important;
+    background-color: transparent !important;
+}
+
+.carousel-indicators button.active{
+    background-color: white !important;
+}
+
+.num{
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.num .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 50px;
+    justify-content: space-evenly;
+}
+
+.num .container .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    text-align: center;
+}
+
+.num .container .item .img-holder{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.num .container .item .details{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.banner .container .head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner .container .head span{
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 5px solid var(--main-color);
+    border-radius: 3px;
+}
+
+.banner .content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.banner .content .item{
+    position: relative;
+    width: 30%;
+}
+
+.banner .content .item img{
+    width: 100%;
+}
+
+.banner .content .item .flep-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+}
+
+.banner .content .item:hover .flep-content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.title-line{
+    margin-bottom: 20px !important;
+}
+
+.about .content{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4rem;
+}
+
+.about .photo-side, .about .desc-side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.about .photo-side{
+    width: 40%;
+}
+
+.about .photo-side .img-holder{
+    margin-top: 20px;
+    width: 85%;
+}
+
+.about .desc-side{
+    width: 60%;
+}
+
+.about .desc-side .desc{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 990px ){
+    .sub-web{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .sub-web .item{
+        width: 35%;
+    }
+    
+    .sub-web .img-holder{
+        width: 60%;
+    }
+
+    .num .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .num .container .item{
+        width: 70%;
+        margin: 10px 0;
+    }
+
+    .num .container .item .img-holder{
+        width: 30%;
+    }
+
+    .banner .content{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner .content .item{
+        width: 30%;
+        margin: 10px 0;
+    }
+
+    .banner .container .head span{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 550px ){
+
+    .sub-web .item{
+        padding: 20px;
+        width: 70%;
+    }
+}

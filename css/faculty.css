@@ -1,0 +1,181 @@
+@import url(config.css);
+
+.num{
+    background-color: teal !important;
+    background-image: none !important;
+}
+
+.sub-web .item {
+    width: 1fr;
+}
+
+#first{
+    background-color: #F129C9;    
+    box-shadow: var(--box-shadow) #F129C9;
+}
+
+#second{
+    background-color: #C329F1;    
+    box-shadow: var(--box-shadow) #C329F1;
+}
+
+#third{
+    background-color: #F14D5D;    
+    box-shadow: var(--box-shadow) #F14D5D;
+}
+
+#fourth{
+    background-color: #2878EB;    
+    box-shadow: var(--box-shadow) #2878EB;
+}
+
+.fac-sections{
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.fac-sections .white-over{
+    background-color: rgba(255, 255, 255, 0.705);
+    width: 100%;
+    height: 100%;
+}
+
+.fac-sections .content{
+    display: flex;
+    flex-direction: row;
+}
+
+.fac-sections ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    text-align: right;    
+}
+
+.fac-sections .fac-sections-list{
+    padding: 30px !important;
+}
+
+.fac-sections .fac-sections-list .title{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    width: 100%;
+    position: relative;
+    height: fit-content;
+}
+
+.fac-sections .fac-sections-list .title::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: teal;
+}
+
+.fac-sections ul li{
+    margin: 10px 0;
+    width: 40%;
+    display: inline-block;
+}
+
+.fac-sections .btn{
+    border: none;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fac-sections .btn .inside-btn{
+    font-size: 1.2rem;
+}
+
+.fac-sections .btn i.fa-circle{
+    display: inline-block;
+    color: teal;
+    margin-left: 10px;
+}
+
+.fac-sections .btn:hover i.fa-circle,
+.fac-sections .btn:focus i.fa-circle{
+    display: none;
+}
+
+.fac-sections .btn i.arrow-left{
+    display: none;
+    color: teal;
+    font-size: 2.4rem;
+    margin-left: 10px;
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+}
+
+.fac-sections .btn:hover i.arrow-left,
+.fac-sections .btn:focus i.arrow-left{
+    display: inline-block;
+}
+
+.fac-sections .content-list{
+    background-color: teal;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fac-sections .fac-sections-list .bt:hover .content-list,
+.fac-sections .fac-sections-list .btn:focus .content-list{
+    opacity: 1;
+    visibility: visible;
+}
+
+.fac-sections .content-list #sec-name{
+    font-size: 1.5rem;
+    padding: 30px !important;
+    color: white;
+    position: relative;
+}
+
+.fac-sections #sec-name .arrow-left{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 5rem;
+
+}
+
+.fac-sections .content-list hr{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    opacity: 1;
+    border: none;
+    margin: 0 !important;
+}
+
+.fac-sections .content-list li{
+    padding: 30px !important;
+    width: 50%;
+}
+
+@media screen and (max-width: 990px ){
+    .about .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .photo-side, .about .desc-side{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
+}

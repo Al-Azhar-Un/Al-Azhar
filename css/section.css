@@ -1,0 +1,25 @@
+@import url(config.css);
+
+.sub-web .item {
+    width: 1fr;
+}
+
+#first{
+    background-color: #F129C9;    
+    box-shadow: var(--box-shadow) #F129C9;
+}
+
+#second{
+    background-color: #C329F1;    
+    box-shadow: var(--box-shadow) #C329F1;
+}
+
+#third{
+    background-color: #F14D5D;    
+    box-shadow: var(--box-shadow) #F14D5D;
+}
+
+#fourth{
+    background-color: #2878EB;    
+    box-shadow: var(--box-shadow) #2878EB;
+}

@@ -1,0 +1,160 @@
+@import url(config.css);
+
+.navbar{
+    background-color: var(--main-color);
+    color: var(--primary-color);
+}
+
+.navbar .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .logo .navbar-brand{
+    width: 16%;
+    margin-left: 1rem;
+}
+
+.navbar .logo img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+nav .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav #menu{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.nav .links .nav-item:not(:first-child)::before{
+    content: "";
+    position: absolute;
+    
+    width: 1px;
+    height: 30px;
+    background-color: #fff;
+}
+
+.nav{
+    background-color: var(--main-color);
+
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.nav #cancel{
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav ul .nav-link{
+    color: white !important;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-self: center;
+}
+
+#check:checked ~ .nav{
+    display: block;
+    width: 250px;
+}
+
+@media screen and (max-width: 990px ){
+
+    nav .container {
+        width: 100%;
+    }
+
+    .header{
+        align-items: center;
+    }
+
+    .header .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .header .navbar-nav .nav-link{
+        margin: 10px;
+    }
+
+    .nav{
+        background-color: var(--main-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 1px;
+        transition: width ease 0.5s;
+        z-index: 1;
+        display: none;    
+        padding: 3rem;
+    }
+
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;   
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav .links .nav-item:not(:first-child)::before{
+        display: none;
+    }
+
+    .sub-navbar{
+        position: absolute;
+        width: 30%;
+        z-index: 33333;
+        left: 0;
+
+    }
+
+    .navbar-toggler{
+        height: fit-content;
+    }
+
+    .navbar-toggler i{
+        color: white;
+    }
+
+    .navbar .links .nav-link:not(:first-child)::before{
+        opacity: 0;
+    }
+
+    nav #menu, .nav #cancel{
+        display: block;
+    }
+}

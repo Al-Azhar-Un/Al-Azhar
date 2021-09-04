@@ -1,0 +1,53 @@
+@import url(config.css);
+
+.header{
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.header .title{
+    padding: 30px;
+    color: white;
+}
+
+.num .container{
+    padding-top: 60px !important;
+}
+
+.partner .content{
+    display: flex;
+    flex-direction: row;
+}
+
+.partner .item{
+    width: 20% !important;
+}
+
+.testmonial .photo-side{
+    width: 30% !important;
+}
+
+.testmonial .desc-side span{
+    color: var(--main-color);
+}
+
+.testmonial .desc-side .name{
+    font-size: 2rem;
+}
+
+.testmonial .desc-side .job{
+    font-size: 1.25rem;
+}
+
+.testmonial .img-holder{
+    size: 60px;
+}
+
+.testmonial .img-holder img{
+    border-radius: 50%;
+}
+
+.title-line{
+    margin-top: 0 !important;
+    padding-top: 50px;
+}
